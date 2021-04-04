@@ -7,9 +7,13 @@
 <link rel="icon" type="image/png" href="png/filtericons_ICONS_S5.png" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet" />
 <style>
-body	{ margin: 0; padding: 0; background-color: black; }
-div	{ font: 30px Roboto; color: #28BBEF; width: 722px; }
-a	{ color: #28BBEF; text-decoration: none; }
+body		{ margin: 0; padding: 0; background-color: black; color: #28BBEF; }
+#head1		{ font: 32px Roboto; width: 722px; }
+#head2		{ font: 27px Roboto; width: 722px; }
+#now		{ font: 24px Roboto; width: 722px; }
+.icon		{ font: 24px Roboto; width: 722px; display: flex; flex-wrap: wrap; }
+.icon > div	{ font: 24px Roboto; width: 361px; display: flex; }
+a		{ text-decoration: none; color: #DDDDDD; }
 </style>
 <script>
 function icons()
@@ -53,23 +57,24 @@ function icons()
 		img.src = "png/005_02_FRANCE.png";
 	}
 
-	document.getElementById("head").innerHTML += "Now: " + now + "<br>";
+	document.getElementById("now").innerHTML = "Now: " + now;
 }
 </script>
 </head>
 <body onload="icons()">
-<div id="head">
-Automatic Display Current Chem Group<br>
-https://tiny.cc/s5icon or https://tiny.cc/s5icons<br>
-<a href="png/005_02_FRANCE.png">FRANCE.png</a><br>
-<a href="png/005_01_ENGLAND.png">ENGLAND.png</a><br>
-<a href="png/005_03_GERMANY.png">GERMANY.png</a><br>
-<a href="png/005_06_WESTERN_EUROPE.png">WESTERN_EUROPE.png</a><br>
-<a href="png/005_04_ITALY.png">ITALY.png</a><br>
-<a href="png/005_08_REST_OF_WORLD.png">REST_OF_WORLD.png</a><br>
-<a href="png/005_05_SPAIN.png">SPAIN.png</a><br>
-<a href="png/005_07_EASTERN_EUROPE.png">EASTERN_EUROPE.png</a><br>
-<a href="png/003_ALL.png">ALL.png</a><br>
+<div id="head1">Automatic Display Current Chem Group</div>
+<div id="head2">https://tiny.cc/s5icon or https://tiny.cc/s5icons</div>
+<div id="now"></div>
+<div class="icon">
+<div><a href="png/005_02_FRANCE.png">1. FRANCE.png</a></div>
+<div><a href="png/005_01_ENGLAND.png">2. ENGLAND.png</a></div>
+<div><a href="png/005_03_GERMANY.png">3. GERMANY.png</a></div>
+<div><a href="png/005_06_WESTERN_EUROPE.png">4. WESTERN_EUROPE.png</a></div>
+<div><a href="png/005_04_ITALY.png">5. ITALY.png</a></div>
+<div><a href="png/005_08_REST_OF_WORLD.png">6. REST_OF_WORLD.png</a></div>
+<div><a href="png/005_05_SPAIN.png">7. SPAIN.png</a></div>
+<div><a href="png/005_07_EASTERN_EUROPE.png">8. EASTERN_EUROPE.png</a></div>
+<div><a href="png/003_ALL.png">9. ALL.png</a></div>
 </div>
 <img id="league" src="" />
 </body>
